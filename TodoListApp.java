@@ -93,7 +93,7 @@ public class TodoListApp {
 
         System.out.print("Enter the task number to mark as complete: ");
         int taskNumber = scanner.nextInt();
-        scanner.nextLine(); // Clear the buffer
+        scanner.nextLine(); 
 
         if (taskNumber >= 1 && taskNumber <= tasks.size()) {
             Task task = tasks.get(taskNumber - 1);
@@ -110,7 +110,7 @@ public class TodoListApp {
 
         System.out.print("Enter the task number to delete: ");
         int taskNumber = scanner.nextInt();
-        scanner.nextLine(); // Clear the buffer
+        scanner.nextLine(); 
 
         if (taskNumber >= 1 && taskNumber <= tasks.size()) {
             tasks.remove(taskNumber - 1);
